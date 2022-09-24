@@ -1,0 +1,33 @@
+﻿<Window x:Class="sokocraft_core.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sokocraft_core"
+        mc:Ignorable="d"
+        Title="Sokocraft" Height="654.91" Width="560" ResizeMode="NoResize" Icon="/images/player.jpg">
+    <Canvas>
+        <Canvas x:Name="CnvGame" Height="575.91" Canvas.Left="27" Canvas.Top="20" Width="500" d:IsHidden="True">
+            <Canvas x:Name="CnvGrid" Height="500" Width="500" Canvas.Top="75.91" Background="Black"/>
+            <Canvas x:Name="CnvMobiles" Height="500" Width="500" Canvas.Top="75.91"/>
+            <Button x:Name="BtnRestart" Content="Recommencer" Width="130" Height="40" FontFamily="Impact" FontSize="20" Click="Restart"/>
+            <TextBlock Canvas.Left="140" TextWrapping="Wrap" Text="Nombre de déplacements :" Height="27" Width="220" FontFamily="Impact" FontSize="20" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="TxtMoveCount" Canvas.Left="220" TextWrapping="Wrap" Text="0" Canvas.Top="25" FontFamily="Impact" FontSize="36" Width="60" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+            <Rectangle x:Name="RectReturn" Height="40" Canvas.Left="460" Width="40" ToolTip="Retour Menu" MouseDown="Square_MouseDown">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/images/exit.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Canvas>
+        <Canvas x:Name="CnvMenu" Height="575.91" Width="500" Canvas.Left="27" Canvas.Top="20">
+            <Rectangle Height="88" Canvas.Left="77" Canvas.Top="54" Width="346">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/images/Sokocraft.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <UniformGrid x:Name="UniGridListLevel" Height="374.5" Width="346" Canvas.Left="77" Canvas.Top="142" Columns="3" Rows="7">
+
+            </UniformGrid>
+        </Canvas>
+    </Canvas>
+</Window>
