@@ -1,0 +1,11 @@
+﻿..XXXXXX..
+.XX....X..
+XXo....XXX
+Xo...C...X
+X...XX.CPX
+X...XX...X
+X....C...X
+XXX....XXX
+..Xo...X..
+..XXXXXX..
+
