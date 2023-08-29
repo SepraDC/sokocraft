@@ -105,10 +105,10 @@ This project was build with .NET core and wpf. Before dev you need to validate p
 ### Prerequisites
 
 The project was developed with .NET core 3.1.
-* Download .NET core
-  
+* Download .NET core :
   https://dotnet.microsoft.com/en-us/download/dotnet/3.1
 
+* Windows OS
 ### Installation
 
 1.  Clone the repo
